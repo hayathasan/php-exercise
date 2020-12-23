@@ -1,9 +1,14 @@
-<?php
-    echo 'Standard Tag: <code> &#60;?php ... ?&#62; </code><br>';
-
+<?php    
+    $standardTag = "Standard Tag:";
     $echoTag = "Echo Tag:";
 ?>
 
-<?= $echoTag ?> <code> &#60;?= $echoTag ?&#62; </code>
+<div>
+    <?php echo $standardTag;?> <code> &#60;?php ... ?&#62; </code>';
+</div>
+
+<div>
+    <?= $echoTag ?> <code> &#60;?= $echoTag ?&#62; </code>
+</div>
 
 
