@@ -9,7 +9,21 @@
     echo "\nargc:\n";
     print_r($argc); 
     
-    echo "\n\nargv\n"; 
+    echo "\n\nargv:\n"; 
     print_r($argv);
+
+
+    function global_fn1 () {
+        global $a, $b; 
+        echo "\n\nglobal_fn1: ".($a+$b)."\n";       
+    }
+
+    global_fn1();
+
+    function global_fn2 () {
+        echo "\n\nglobal_fn2: ".($GLOBALS['a'] + $GLOBALS['b'])."\n";       
+    }
+
+    global_fn2();
 
 ?>
