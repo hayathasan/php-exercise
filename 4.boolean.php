@@ -6,4 +6,10 @@
     
     $a += 1; echo "a += 1 : $a\n"; echo "b = b : $b\n";
 
+    echo "\nargc:\n";
+    print_r($argc); 
+    
+    echo "\n\nargv\n"; 
+    print_r($argv);
+
 ?>
