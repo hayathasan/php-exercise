@@ -26,4 +26,6 @@
 
     global_fn2();
 
+    //some changes
+
 ?>
