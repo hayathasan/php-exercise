@@ -26,6 +26,14 @@
 
     global_fn2();
 
-    //some changes
+    echo "Static Variable:\n";
+    function static_var(){
+        static $aa = 0; echo "$aa\n\n"; $aa++;        
+    }
+
+    foreach([1,2,3] as $i){
+        static_var();
+    }
+
 
 ?>
