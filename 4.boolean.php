@@ -35,5 +35,24 @@
         static_var();
     }
 
+    
+    class example{
+        // public $a = 'unchanged';
+        public static $a = 'unchanged';
+        public function change_a(){
+            // $this->a = 'changed';
+            $this::$a = 'changed';
+        }        
+    }
+    
+    $b = new example;
+    $c = new example;
+
+    $b->change_a();
+    
+    // print "b static: {$b->a}\n";
+    // print "c static: {$c->a}\n";
+    print "c static: {$c::$a}\n";
+    print "b static: {$b::$a}\n";
 
 ?>
