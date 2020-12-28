@@ -41,7 +41,10 @@
         public static $a = 'unchanged';
         public function change_a(){
             // $this->a = 'changed';
-            $this::$a = 'changed';
+            // $this::$a = 'changed';
+            // When referring static veriable, inside class. It's better to use `self` instead `$this`.
+            self::$a = 'changed';
+            // by using `self` you just eleminate double use of ($) sign :)
         }        
     }
     
