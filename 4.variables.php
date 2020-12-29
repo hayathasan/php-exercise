@@ -56,6 +56,16 @@
     // print "b static: {$b->a}\n";
     // print "c static: {$c->a}\n";
     print "c static: {$c::$a}\n";
-    print "b static: {$b::$a}\n";
+    print "b static: {$b::$a}\n\n";
+
+
+    //Variables variable 
+    $var1 = 'val_1';
+    $var2 = 'val_2';
+
+    foreach(['var1','var2'] as $var){
+        echo $$var . "\n";
+    }
+
 
 ?>
