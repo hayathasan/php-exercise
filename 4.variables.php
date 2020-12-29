@@ -59,6 +59,12 @@
     print "b static: {$b::$a}\n\n";
 
 
+    $string1 = 'a';
+    $string2 = 'b';
+    $ab = "abc";
+    var_dump(${$string1.$string2});
+    echo "\n";
+
     //Variables variable 
     $var1 = 'val_1';
     $var2 = 'val_2';
@@ -66,6 +72,7 @@
     foreach(['var1','var2'] as $var){
         echo $$var . "\n";
     }
+
 
 
 ?>
