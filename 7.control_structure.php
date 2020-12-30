@@ -29,7 +29,7 @@ switch(true){
 }
 
 
-print "\n\n--- requite/include ---\n\n";
+print "\n\n--- require/include ---\n\n";
 
 
 echo dirname(__FILE__);
