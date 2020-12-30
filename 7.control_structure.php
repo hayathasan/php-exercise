@@ -17,3 +17,13 @@ foreach($arr as list($a,$aa)){
     echo "$a - $aa \n";
 }
 
+
+print "\n\n--- switch ---\n\n";
+
+$a = 0;
+
+switch(true){
+    case ($a === true): echo '$a is true'; break;
+    case ($a === false): echo '$a is false'; break;
+    case ($a === 0): echo '$a is 0'; break;
+}
