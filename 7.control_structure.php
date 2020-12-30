@@ -27,3 +27,11 @@ switch(true){
     case ($a === false): echo '$a is false'; break;
     case ($a === 0): echo '$a is 0'; break;
 }
+
+
+print "\n\n--- requite/include ---\n\n";
+
+
+echo dirname(__FILE__);
+echo "\n";
+echo dirname(dirname(__FILE__));
