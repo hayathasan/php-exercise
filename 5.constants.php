@@ -11,4 +11,5 @@ class classConstant {
 
 $class_constant = classConstant::FOO_CLASS;
 echo $class_constant;
+
 ?>
