@@ -82,3 +82,11 @@ $somefunction = "var_function";
 $somefunction();
 $somefunction("some new param");
 
+
+print "\n\n--- variable function within obj method ---\n\n";
+
+class Foo{
+    static function var_function1() {
+        
+    }
+}
