@@ -45,6 +45,30 @@ fn_with_def_prm1("sultan's dine ");
 fn_with_def_prm1("sultan's dine ", "kacchi");
 
 
-print "\n\n--- function with default parameter ---\n\n";
+print "\n\n--- function with [...token] parameter ---\n\n";
 
+
+function numsum(...$nums){
+    $cc = 0;
+    foreach($nums as $c){
+        $cc += $c;
+    }
+    return "$cc\n";
+}
+echo numsum(1,2,3,4);
+
+
+function makeName1($name){
+    list($fname,$mname,$lname) = $name;
+    echo "$fname $mname $lname\n";
+}
+function makeName2($fname, $mname, $lname){
+    echo "$fname $mname $lname\n";
+}
+
+makeName1(["hayat","md","hasan"]);
+makeName2(...["hayat","md","hasan"]);
+
+
+print "\n\n--- function with named parameter ---\n\n";
 
