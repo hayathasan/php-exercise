@@ -70,4 +70,15 @@ makeName1(["hayat","md","hasan"]);
 makeName2(...["hayat","md","hasan"]);
 
 
-print "\n\n--- function with [...token] parameter ---\n\n";
+print "\n\n--- variable function ---\n\n";
+
+function var_function($prm = "some param"){
+    if($prm != ''){
+        echo "variable function executed with $prm\n";
+    }
+}
+
+$somefunction = "var_function";
+$somefunction();
+$somefunction("some new param");
+
