@@ -70,5 +70,4 @@ makeName1(["hayat","md","hasan"]);
 makeName2(...["hayat","md","hasan"]);
 
 
-print "\n\n--- function with named parameter ---\n\n";
-
+print "\n\n--- function with [...token] parameter ---\n\n";
