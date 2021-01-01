@@ -87,6 +87,20 @@ print "\n\n--- variable function within obj method ---\n\n";
 
 class Foo{
     static function var_function1() {
-        
+        $someother_fn = "var_function2";
+        self::$someother_fn();
+    }
+    function var_function2(){
+        echo "var_function2() called\n";
     }
 }
+
+$var_newfn = "var_function1";
+Foo::$var_newfn();
+
+
+print "\n\n--- built-in functions ---\n\n";
+
+
+var_dump(get_extension_funcs('mysqli'));
+var_dump(get_loaded_extensions());
