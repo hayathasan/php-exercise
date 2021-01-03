@@ -104,3 +104,24 @@ print "\n\n--- built-in functions ---\n\n";
 
 var_dump(get_extension_funcs('mysqli'));
 var_dump(get_loaded_extensions());
+
+
+print "\n\n--- anonymous functions ---\n\n";
+
+$greet = function($name){
+    printf("Hello %s\r\n",$name);
+    echo "Hello $name \n";
+};
+
+$greet("World");
+$greet("Hayat");
+
+print "\n\n--- Inherited Variables functions ---\n\n";
+
+$msg = "Hello";
+
+$fn = function() use ($msg){
+    echo "$msg\n";
+};
+
+$fn();
