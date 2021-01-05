@@ -3,8 +3,8 @@ print "\n\n--- static and non-static method ---\n\n";
 
 class Foo{
     public $a = "a";
-    public function aa(){
-        $this->a = "aa\n";
+    public function a(){
+        $this->a = "a()\n";
         return $this->a;
     }
 
@@ -18,7 +18,7 @@ class Foo{
 //non-static method called via class instantiation 
 $foo = new Foo();
 echo "property: $foo->a \n";
-echo "menthod: {$foo->aa()}";
+echo "menthod: {$foo->a()}";
 
 //static method called with scope resolution operator
 echo Foo::bb();
