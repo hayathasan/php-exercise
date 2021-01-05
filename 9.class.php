@@ -13,6 +13,7 @@ class Foo{
         self::$b = "bb\n";
         return self::$b;
     }
+    
 }
 
 //non-static method called via class instantiation 
@@ -25,3 +26,5 @@ echo Foo::bb();
 
 //static method called via class instantiation
 echo $foo->bb();
+
+
