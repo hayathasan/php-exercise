@@ -29,3 +29,23 @@ echo Foo::bb();
 echo $foo->bb();
 
 
+
+print "\n\n--- class constant ---\n\n";
+
+class MyClass {
+    const CONSTANT = "A Constant";
+    function showConstant(){
+        echo self::CONSTANT . "\n";
+    }
+}
+
+echo MyClass::CONSTANT . "\n";
+
+$myClassName = "MyClass";
+echo $myClassName::CONSTANT . "\n";
+$myClassName::showConstant();
+
+$initMyClass = new MyClass();
+$initMyClass->showConstant();
+echo $initMyClass::CONSTANT;
+
