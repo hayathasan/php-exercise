@@ -18,7 +18,8 @@ class Foo{
 
 //non-static method called via class instantiation 
 $foo = new Foo();
-echo "property: $foo->a \n";
+echo "property: $foo->a \n"; //non static
+echo "property: ".Foo::$b." \n"; //static
 echo "menthod: {$foo->a()}";
 
 //static method called with scope resolution operator
