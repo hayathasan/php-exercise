@@ -6,9 +6,4 @@ class Class2 {
         $this->privateVar = 'New Private Value';
         return $this->privateVar;
     }
-    
-    function class2Method2(){
-        self::$privateVar = 'New New Private Value';        
-        return self::$privateVar;
-    }
 }
