@@ -1,5 +1,5 @@
 <?php
-function __autoload($class){
+spl_autoload_register(function ($class){
     $dirs = [
         'classes/',
         'modules/classes/'
@@ -11,5 +11,9 @@ function __autoload($class){
             return;
         }
     }
-}
+});
+
+$class1 = new Class1();
+$class2 = new Class2();
+
 
